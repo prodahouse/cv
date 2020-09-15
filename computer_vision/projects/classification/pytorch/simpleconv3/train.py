@@ -7,8 +7,10 @@
 #     longpeng2008to2012@gmail.com 
 #
 # or create issues
+#from __future__ import print_function, division
+#import os
+#os.chdir("/Users/owenma/_ds/_deeplearning/cv/yousan.ai/computer_vision/projects/classification/pytorch/simpleconv3")
 # =============================================================================
-from __future__ import print_function, division
 
 import torch
 import torch.nn as nn
@@ -90,7 +92,7 @@ if __name__ == '__main__':
         ]),
     }
 
-    data_dir = './da/'
+    data_dir = './data/'
     image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                               data_transforms[x]) for x in ['train', 'val']}
     dataloders = {x: torch.utils.data.DataLoader(image_datasets[x],

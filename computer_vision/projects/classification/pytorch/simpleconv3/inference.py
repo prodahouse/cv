@@ -10,6 +10,8 @@ import os
 from PIL import Image
 import sys
 import torch.nn.functional as F
+import os
+os.chdir("/Users/owenma/_ds/_deeplearning/cv/yousan.ai/computer_vision/projects/classification/pytorch/simpleconv3")
 
 from net import simpleconv3
 data_transforms =  transforms.Compose([

@@ -2,6 +2,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
+import os
+os.chdir("/Users/owenma/_ds/_deeplearning/cv/yousan.ai/computer_vision/projects/classification/pytorch/simpleconv3")
 
 class simpleconv3(nn.Module):
     def __init__(self):
